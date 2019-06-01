@@ -38,7 +38,7 @@ get_header(); ?>
                 
 			} else {
                 // no posts found
-                '<h3>Your database is empty LOL. GET SOME QUOTES IN THERE DUMMY.</h3>';
+                '<h3>Your database is empty . GET SOME QUOTES IN THERE.</h3>';
             }
             ?><button type="button" class="quote-button">Show Me Another!</button><?php
 			/* Restore original Post Data */
