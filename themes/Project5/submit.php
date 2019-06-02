@@ -22,8 +22,22 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+			<form class="lol">
+  Author of Quote<br>
+  <input type="text" class='author' >
+  <br>
+  Quote:<br>
+  <input type="text" class="quote" >
+  <br>
+  Where did you find this<br>
+  <input type="text" class="source">
+  <br>
+  URL <br>
+  <input type="text" class="url">
+  <br>
+  <button class="submit1" type="button">
+  </form> 
 
-				<?php get_template_part( 'template-parts/content' ); ?>
 
 			<?php endwhile; ?>
 
