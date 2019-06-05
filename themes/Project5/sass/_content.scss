@@ -7,6 +7,9 @@
 .site-content {
 max-width: $width_fixed;
 font-size: $base__font-size;
+	@include breakpoint(tablet) {
+		font-size: 1.3em;
+	}
 }
 
 

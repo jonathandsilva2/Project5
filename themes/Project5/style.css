@@ -567,6 +567,9 @@ a {
 .site-content {
   max-width: 1080px;
   font-size: 16px; }
+  @media (min-width: 600px) {
+    .site-content {
+      font-size: 1.3em; } }
 
 /* Posts and pages */
 .sticky {
@@ -620,7 +623,8 @@ object {
 # home.php
 --------------------------------------------------------------*/
 body {
-  padding: 0 15px; }
+  padding: 0 15px;
+  min-width: 440px; }
   @media (min-width: 1240px) {
     body {
       display: -webkit-box;
@@ -632,7 +636,8 @@ body {
 
 @media (min-width: 1240px) {
   .site-main {
-    text-align: center; } }
+    text-align: center;
+    padding: 0 80px; } }
 
 .quote-main {
   font-size: 2em; }
@@ -643,26 +648,21 @@ button {
 /*--------------------------------------------------------------
 # home.php
 --------------------------------------------------------------*/
-@media (min-width: 1240px) {
-  .main-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
-
 .home-logo {
   margin: 3em 0; }
+
+@media (min-width: 1240px) {
+  .main-navigation {
+    text-align: center; } }
+
+.home-logo {
+  width: 550px; }
   @media (min-width: 600px) {
     .home-logo {
-      width: 550px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+      width: 700px; } }
+  @media (min-width: 1240px) {
+    .home-logo {
+      width: 940px; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -675,15 +675,11 @@ button {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      font-size: .95rem; } }
+      font-size: 0.95rem; } }
   @media (min-width: 1240px) {
     .site-footer {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; } }
+      position: absolute;
+      left: 45%; } }
 
 .menu > ul {
   display: -webkit-box;
@@ -697,7 +693,7 @@ button {
     border-left: 2px solid white;
     position: relative;
     right: 23px; }
-    @media (min-width: 1240px) {
+    @media (min-width: 600px) {
       .menu > ul li {
         border-right: 2px solid white;
         border-left: none; } }
@@ -707,8 +703,7 @@ button {
   @media (min-width: 600px) {
     .footer-link {
       position: relative;
-      bottom: 16px;
-      right: 20px; } }
+      bottom: 15px; } }
   @media (min-width: 1240px) {
     .footer-link {
       right: 0; } }

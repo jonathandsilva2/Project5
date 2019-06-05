@@ -2,21 +2,32 @@
 # home.php
 --------------------------------------------------------------*/
 
+
+    
+    
+//     @include breakpoint(desktop) {
+//     display: flex;
+//     justify-content: center;
+//     }
+// }
+
+.home-logo {
+    margin: 3em 0;
+    
+}
+
 .main-navigation {
-    
-    
     @include breakpoint(desktop) {
-    display: flex;
-    justify-content: center;
+        text-align: center;
     }
 }
 
 .home-logo {
-    margin: 3em 0;
+    width: 550px;
     @include breakpoint(tablet) {
-        width: 550px;
-       display: flex;
-       justify-content: center;
+        width: 700px
+    }
+    @include breakpoint(desktop) {
+        width: 940px;
     }
 }
-
