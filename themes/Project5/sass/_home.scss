@@ -3,30 +3,34 @@
 --------------------------------------------------------------*/
 
 
+body {
+    padding: 0 15px;
+
+    @include breakpoint(desktop) {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 
-.home-logo {
-    margin-top: 3rem;
+
+.site-main {
+
+    @include breakpoint(desktop) {
+        text-align: center;
+    }
+ 
 }
 
 .quote-main {
     font-size: 2em;
 }
 
-.quote-container {
-    display: flex;
+button {
+    margin-top: 3em;
+
+ 
+}
     
-}
-.quote-button {
-    margin-top: 2em;
-}
 
-
-
-.lol123 {
-    color: #00cc00;
-    font-size: 10px;
-    position: absolute;
-    
-}
 

@@ -2,6 +2,14 @@
 # Content
 --------------------------------------------------------------*/
 
+/*Base Values*/
+
+.site-content {
+max-width: $width_fixed;
+font-size: $base__font-size;
+}
+
+
 /* Posts and pages */
 
 .sticky {
@@ -30,4 +38,8 @@
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;
+}
+
+a {
+    text-decoration: none;
 }

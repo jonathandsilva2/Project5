@@ -26,7 +26,6 @@ get_header(); ?>
 		<h1>About</h1>
 		<p>Quotes on Dev is a project site for the RED Academy Web Developer Professional program. It's used to experiment with AJAX, WP API, jQuery, and other cool things. </p>
 		<p>This site is heavily inspired by Chris Coyler's <a href="www.Quotesondesign.com">Quotes  on Design.</a>
-		<i class="fa fa-camera-retro"></i>
 
 			<?php endwhile; ?>
 

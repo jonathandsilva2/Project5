@@ -34,5 +34,4 @@
 			"/>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
-			<i class="fas fa-quote-left lol123"></i>
 			<div id="content" class="site-content">

@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------
+# home.php
+--------------------------------------------------------------*/
+
+.main-navigation {
+    
+    
+    @include breakpoint(desktop) {
+    display: flex;
+    justify-content: center;
+    }
+}
+
+.home-logo {
+    margin: 3em 0;
+    @include breakpoint(tablet) {
+        width: 550px;
+       display: flex;
+       justify-content: center;
+    }
+}
+

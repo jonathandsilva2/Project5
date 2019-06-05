@@ -20,14 +20,13 @@ $( document ).ready(function() {
 console.log(data);
        $('.quote-main').html(''); 
        $('.quote-main').append(content);
-      //  $('.quote-main').append( '<p>&#8212 ' + author + '</p>' );
        if (response[0]._qod_quote_source.length !== 0 & response[0]._qod_quote_source_url.length !== 0) {
          let source = response[0]._qod_quote_source
          let sourceURL = response[0]._qod_quote_source_url
 
-         $('.quote-main').append( '<p>&#8212' + author + ', <a href ="' + sourceURL + '">' + source + '</p>' );
+         $('.quote-main').append( '<p>&#8212 ' + author + ', <a href ="' + sourceURL + '">' + source + '</p>' );
        } else {
-                $('.quote-main').append( '<p>&#8212' + author + '</p>' );
+                $('.quote-main').append( '<p>&#8212 ' + author + '</p>' );
        }
        
 

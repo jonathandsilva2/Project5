@@ -563,6 +563,11 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*Base Values*/
+.site-content {
+  max-width: 1080px;
+  font-size: 16px; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -585,6 +590,9 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+a {
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Media
@@ -611,24 +619,99 @@ object {
 /*--------------------------------------------------------------
 # home.php
 --------------------------------------------------------------*/
-.home-logo {
-  margin-top: 3rem; }
+body {
+  padding: 0 15px; }
+  @media (min-width: 1240px) {
+    body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+@media (min-width: 1240px) {
+  .site-main {
+    text-align: center; } }
 
 .quote-main {
   font-size: 2em; }
 
-.quote-container {
+button {
+  margin-top: 3em; }
+
+/*--------------------------------------------------------------
+# home.php
+--------------------------------------------------------------*/
+@media (min-width: 1240px) {
+  .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+.home-logo {
+  margin: 3em 0; }
+  @media (min-width: 600px) {
+    .home-logo {
+      width: 550px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+.site-footer {
+  font-size: 1.3rem;
+  margin-top: 5em; }
+  @media (min-width: 600px) {
+    .site-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: .95rem; } }
+  @media (min-width: 1240px) {
+    .site-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
+
+.menu > ul {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .menu > ul li {
+    padding: 0 20px;
+    border-left: 2px solid white;
+    position: relative;
+    right: 23px; }
+    @media (min-width: 1240px) {
+      .menu > ul li {
+        border-right: 2px solid white;
+        border-left: none; } }
 
-.quote-button {
-  margin-top: 2em; }
-
-.lol123 {
-  color: #00cc00;
-  font-size: 10px;
-  position: absolute; }
+.footer-link {
+  display: block; }
+  @media (min-width: 600px) {
+    .footer-link {
+      position: relative;
+      bottom: 16px;
+      right: 20px; } }
+  @media (min-width: 1240px) {
+    .footer-link {
+      right: 0; } }
 
 body {
   font-family: 'Exo-Light'; }
