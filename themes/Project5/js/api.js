@@ -5,7 +5,7 @@ $( document ).ready(function() {
        event.preventDefault();
        $.ajax({
           method: 'get',
-          url: 'http://localhost:8888/Project5/wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1/',
+          url: red_vars.rest_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1/',
           data: {
 
           },
@@ -13,6 +13,7 @@ $( document ).ready(function() {
        
        }).done( function(response) {
        let data = response;
+       console.log(data);
        let author = response[0].title.rendered;
        let content = response[0].content.rendered;
       
@@ -55,6 +56,7 @@ console.log(data);
          $.ajax({
             method: 'post',
             url: 'http://localhost:8888/Project5/wp-json/wp/v2/posts',
+            
             data: ourPostData, 
  
    beforeSend: function(xhr) {
@@ -67,6 +69,7 @@ console.log(data);
    alert("GJ");
   })
 })
+
 
  ;
 

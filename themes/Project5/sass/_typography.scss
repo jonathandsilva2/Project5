@@ -8,8 +8,8 @@ input,
 select,
 textarea {
 	color: $color__text-main;
-	font-family: $font__main;
-	font-size: 1rem;
+	font-family: $font__medium;
+	font-size: $base__font-size;
 	line-height: $font__line-height-body;
 }
 
@@ -66,3 +66,4 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+

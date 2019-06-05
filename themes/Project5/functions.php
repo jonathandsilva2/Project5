@@ -89,12 +89,17 @@ function red_scripts() {
 	wp_enqueue_script( 'red_comments', $script_url, array( 'jquery' ), false, true );
    wp_localize_script( 'red_comments', 'red_vars', array(
 	   'rest_url' => esc_url_raw( rest_url() ),
-	   'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
-	   'post_id' => get_the_ID()
+	   'wpapi_nonce' => wp_create_nonce( 'wp_rest' )
+	  //  'post_id' => get_the_ID()
    ) );
  }
  add_action( 'wp_enqueue_scripts', 'red_scripts' );
 
- function loL1() {
-	 
- }
+/**
+ * Add FONTAWESOME icons
+ */
+
+function get_external_css(){
+    wp_enqueue_style('fontawesome','https://use.fontawesome.com/releases/v5.8.2/css/all.css',false);
+}
+add_action('wp_enqueue_scripts', 'get_external_css');

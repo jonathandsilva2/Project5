@@ -21,23 +21,12 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
+			<section class="about-section">
 			<?php while ( have_posts() ) : the_post(); ?>
-			<form class="lol">
-  Author of Quote<br>
-  <input type="text" class='author' >
-  <br>
-  Quote:<br>
-  <input type="text" class="quote" >
-  <br>
-  Where did you find this<br>
-  <input type="text" class="source">
-  <br>
-  URL <br>
-  <input type="text" class="url">
-  <br>
-  <button class="submit1" type="button">
-  </form> 
-
+		<h1>About</h1>
+		<p>Quotes on Dev is a project site for the RED Academy Web Developer Professional program. It's used to experiment with AJAX, WP API, jQuery, and other cool things. </p>
+		<p>This site is heavily inspired by Chris Coyler's <a href="www.Quotesondesign.com">Quotes  on Design.</a>
+		<i class="fa fa-camera-retro"></i>
 
 			<?php endwhile; ?>
 

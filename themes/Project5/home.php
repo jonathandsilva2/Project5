@@ -17,6 +17,7 @@ get_header(); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
+		
 			<?php $args = array(
 				'post_type' => 'post',
 				'orderby'   => 'rand',
@@ -27,6 +28,8 @@ get_header(); ?>
 			$the_query = new WP_Query( $args );
 			
 			// The Loop
+			?>
+			<main class="quote-container"> <?php
 			if ( $the_query->have_posts() ) {
 				echo '<section class = "quote-main">';
 				while ( $the_query->have_posts() ) {
@@ -39,9 +42,12 @@ get_header(); ?>
 			} else {
                 // no posts found
                 '<h3>Your database is empty . GET SOME QUOTES IN THERE.</h3>';
-            }
-            ?><button type="button" class="quote-button">Show Me Another!</button><?php
+			}
+			?> </main>
+            <button type="button" class="quote-button">Show Me Another!</button><?php
 			/* Restore original Post Data */
+
+			
 			wp_reset_postdata();
 				
 				?>
