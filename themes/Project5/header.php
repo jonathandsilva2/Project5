@@ -26,7 +26,7 @@
 				
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-navigation quote-holder" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					
 					<img class="home-logo" src="<?php echo get_template_directory_uri().'/images/' ?>qod-logo.svg" alt="Main Site Logo

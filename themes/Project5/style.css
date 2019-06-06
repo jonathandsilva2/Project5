@@ -671,23 +671,25 @@ button {
   left: 90vw;
   display: none; }
 
-.site-content::before {
-  font-family: FontAwesome;
-  font-size: 153px;
-  content: "\f10d";
-  position: absolute;
-  color: #00cc00;
-  top: 22%;
-  right: 88%; }
+@media (min-width: 1240px) {
+  .quote-holder::before {
+    font-family: FontAwesome;
+    font-size: 153px;
+    content: "\f10d";
+    position: absolute;
+    color: #00cc00;
+    top: 250px;
+    left: 10px; } }
 
-.site-content::after {
-  font-family: FontAwesome;
-  font-size: 153px;
-  content: "\f10e";
-  position: absolute;
-  color: #00cc00;
-  top: 22%;
-  right: 2%; }
+@media (min-width: 1240px) {
+  .quote-holder::after {
+    font-family: FontAwesome;
+    font-size: 153px;
+    content: "\f10e";
+    position: absolute;
+    color: #00cc00;
+    top: 250px;
+    right: 10px; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -800,6 +802,10 @@ button {
     .quote-categories > .categories ul li {
       padding-right: 14px;
       font-size: 1.3rem; }
+
+.search-title {
+  border-bottom: 1px dashed #ffffff;
+  padding-bottom: 28px; }
 
 body {
   font-family: 'Exo-Light'; }

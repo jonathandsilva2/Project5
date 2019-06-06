@@ -46,23 +46,28 @@
     display: none;
 }
 
-.site-content::before {
+
+
+.quote-holder::before {
+
+@include breakpoint(desktop){
     font-family: FontAwesome;
     font-size: 153px;
     content: "\f10d";
     position: absolute;
     color: $color__text-brand;
-    top: 22%;
-    right: 88%;
+    top: 250px;
+    left: 10px;
 }
-
-.site-content::after {
+}
+.quote-holder::after  {
+@include breakpoint(desktop) {
     font-family: FontAwesome;
     font-size: 153px;
     content: "\f10e";
     position: absolute;
     color: $color__text-brand;
-    top: 22%;
-    right: 2%;
-
+  top: 250px;
+  right: 10px;
+}
 }
