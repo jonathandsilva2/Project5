@@ -21,34 +21,40 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
+			<section class="submit-page">
 			<?php while ( have_posts() ) : the_post(); ?>
-			<form class="lol">
+			
+			<h2>Submit a Quote</h2>
+			<?php if ( is_user_logged_in()) : ?>
+			<form class="main-form">
   Author of Quote<br>
   <input type="text" class='author' >
   <br>
   Quote:<br>
   <input type="text" class="quote" >
   <br>
-  Where did you find this<br>
+  Where did you find this? (e.g. book name)<br>
   <input type="text" class="source">
   <br>
-  URL <br>
+  Provide the URL of the quote source, if available. <br>
   <input type="text" class="url">
   <br>
-  <button class="submit1" type="button">
+  <button class="submit1" type="button"> Submit Quote</button>
   </form> 
 
 
-			<?php endwhile; ?>
+		
 
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
+	<p>Sorry, you must be logged in to submit a quote!</p>
+	<a href="<?php echo esc_url( home_url( '/wp-login.php' ) ); ?>"> Click here to login.</a>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
+			<?php endif ?>
+			<?php endwhile; ?>
 		<?php endif; ?>
-
+</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

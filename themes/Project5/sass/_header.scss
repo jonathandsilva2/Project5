@@ -31,3 +31,38 @@
         width: 940px;
     }
 }
+
+.leftquote {
+    font-size: 120px;
+    position: absolute;
+    top: 300px;
+}
+
+.rightquote {
+    font-size: 120px;
+    position: absolute;
+    top: 400px;
+    left: 90vw;
+    display: none;
+}
+
+.site-content::before {
+    font-family: FontAwesome;
+    font-size: 153px;
+    content: "\f10d";
+    position: absolute;
+    color: $color__text-brand;
+    top: 22%;
+    right: 88%;
+}
+
+.site-content::after {
+    font-family: FontAwesome;
+    font-size: 153px;
+    content: "\f10e";
+    position: absolute;
+    color: $color__text-brand;
+    top: 22%;
+    right: 2%;
+
+}

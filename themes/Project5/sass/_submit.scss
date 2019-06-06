@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# home.php
+--------------------------------------------------------------*/
+
+
+    
+    
+.submit-page {
+    @include breakpoint(desktop){
+        text-align: left;
+    }
+}
+
+
+.author{
+    padding-right: 20%;
+}
+
+.quote {
+    padding: 0 74% 10% 0%;
+}
+
+.source {
+    padding-right: 20%;
+}
+
+.url {
+    padding-right: 20%;
+}
+
+.main-form {
+    line-height: 2;
+}

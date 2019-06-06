@@ -399,23 +399,18 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  color: #00cc00;
+  border-color: #00cc00;
+  border-radius: 3px;
+  background: transparent; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 3px; }
+    color: #00cc00;
+    border-color: #00cc00; }
 
 textarea {
   padding-left: 3px;
@@ -426,7 +421,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #00cc00; }
   a:visited {
     color: #00cc00; }
   a:hover, a:focus, a:active {
@@ -664,6 +659,36 @@ button {
     .home-logo {
       width: 940px; } }
 
+.leftquote {
+  font-size: 120px;
+  position: absolute;
+  top: 300px; }
+
+.rightquote {
+  font-size: 120px;
+  position: absolute;
+  top: 400px;
+  left: 90vw;
+  display: none; }
+
+.site-content::before {
+  font-family: FontAwesome;
+  font-size: 153px;
+  content: "\f10d";
+  position: absolute;
+  color: #00cc00;
+  top: 22%;
+  right: 88%; }
+
+.site-content::after {
+  font-family: FontAwesome;
+  font-size: 153px;
+  content: "\f10e";
+  position: absolute;
+  color: #00cc00;
+  top: 22%;
+  right: 2%; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -707,6 +732,74 @@ button {
   @media (min-width: 1240px) {
     .footer-link {
       right: 0; } }
+
+/*--------------------------------------------------------------
+# home.php
+--------------------------------------------------------------*/
+@media (min-width: 1240px) {
+  .about-section {
+    text-align: left; } }
+
+/*--------------------------------------------------------------
+# home.php
+--------------------------------------------------------------*/
+@media (min-width: 1240px) {
+  .submit-page {
+    text-align: left; } }
+
+.author {
+  padding-right: 20%; }
+
+.quote {
+  padding: 0 74% 10% 0%; }
+
+.source {
+  padding-right: 20%; }
+
+.url {
+  padding-right: 20%; }
+
+.main-form {
+  line-height: 2; }
+
+/*--------------------------------------------------------------
+# home.php
+--------------------------------------------------------------*/
+.quote-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none; }
+  .quote-author li {
+    padding-right: 14px; }
+
+.quote-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none; }
+  .quote-tags li {
+    padding-right: 14px; }
+
+.quote-categories > .categories {
+  position: relative;
+  left: 22px;
+  list-style: none;
+  font-size: 1.5em; }
+  .quote-categories > .categories ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .quote-categories > .categories ul li {
+      padding-right: 14px;
+      font-size: 1.3rem; }
 
 body {
   font-family: 'Exo-Light'; }

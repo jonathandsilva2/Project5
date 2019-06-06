@@ -16,18 +16,19 @@ get_header(); ?>
 			
 		
 	 <h2>Quote Authors</h2>
-        <ul>
+        <ul class="quote-author">
 		<?php
 			$posts = get_posts( 'posts_per_page=-1' );
 					foreach ( $posts as $post ) : setup_postdata( $post ); ?>
                         <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					<?php endforeach;
 					wp_reset_postdata(); ?>
-                </ul>
+				</ul>
+				<div class="quote-categories">
 				<?php wp_list_categories (); ?>
-
+</div>	
 				<h2>Tags</h2>
-<ul>
+<ul class="quote-tags">
 	<?php
 	
     $tags = get_tags();
@@ -39,7 +40,7 @@ get_header(); ?>
 </ul>
 			
 
-;
+
 
 			<?php endwhile; // End of the loop. ?>
 
