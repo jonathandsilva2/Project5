@@ -337,20 +337,17 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul,
-ol {
-  margin: 0 0 1.5rem 3rem; }
-
 ul {
-  list-style: disc; }
+  list-style: disc;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px; }
 
 ol {
   list-style: decimal; }
 
 li > ul,
 li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
+  margin-bottom: 0; }
 
 dt {
   font-weight: bold; }
@@ -620,6 +617,9 @@ object {
 body {
   padding: 0 15px;
   min-width: 440px; }
+  @media (min-width: 600px) {
+    body {
+      padding: 0 30px; } }
   @media (min-width: 1240px) {
     body {
       display: -webkit-box;
@@ -631,14 +631,28 @@ body {
 
 @media (min-width: 1240px) {
   .site-main {
-    text-align: center;
-    padding: 0 80px; } }
+    padding: 0 200px; } }
 
 .quote-main {
-  font-size: 2em; }
+  font-size: 1.5em;
+  height: 380px; }
+  @media (min-width: 600px) {
+    .quote-main {
+      font-size: 1.2em; } }
+  @media (min-width: 1240px) {
+    .quote-main {
+      font-size: 1.3em; } }
 
-button {
+.quote-button-container {
   margin-top: 3em; }
+  @media (min-width: 1240px) {
+    .quote-button-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 /*--------------------------------------------------------------
 # home.php
@@ -651,13 +665,13 @@ button {
     text-align: center; } }
 
 .home-logo {
-  width: 550px; }
+  width: 425px; }
   @media (min-width: 600px) {
     .home-logo {
-      width: 700px; } }
+      width: 575px; } }
   @media (min-width: 1240px) {
     .home-logo {
-      width: 940px; } }
+      width: 675px; } }
 
 .leftquote {
   font-size: 120px;
@@ -674,22 +688,22 @@ button {
 @media (min-width: 1240px) {
   .quote-holder::before {
     font-family: FontAwesome;
-    font-size: 153px;
+    font-size: 130px;
     content: "\f10d";
     position: absolute;
     color: #00cc00;
-    top: 250px;
-    left: 10px; } }
+    top: 174px;
+    left: 150px; } }
 
 @media (min-width: 1240px) {
   .quote-holder::after {
     font-family: FontAwesome;
-    font-size: 153px;
+    font-size: 130px;
     content: "\f10e";
     position: absolute;
     color: #00cc00;
-    top: 250px;
-    right: 10px; } }
+    top: 174px;
+    right: 165px; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -702,7 +716,7 @@ button {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      font-size: 0.95rem; } }
+      font-size: .92rem; } }
   @media (min-width: 1240px) {
     .site-footer {
       position: absolute;
@@ -716,7 +730,7 @@ button {
   padding: 0;
   margin: 0; }
   .menu > ul li {
-    padding: 0 20px;
+    padding: 0 18px;
     border-left: 2px solid white;
     position: relative;
     right: 23px; }
@@ -738,6 +752,12 @@ button {
 /*--------------------------------------------------------------
 # home.php
 --------------------------------------------------------------*/
+.about-title {
+  font-weight: 700; }
+
+.about-title {
+  font-size: 1.7em; }
+
 @media (min-width: 1240px) {
   .about-section {
     text-align: left; } }
@@ -753,7 +773,10 @@ button {
   padding-right: 20%; }
 
 .quote {
-  padding: 0 74% 10% 0%; }
+  padding: 0 30% 10% 0%; }
+  @media (min-width: 600px) {
+    .quote {
+      padding: 0 64% 10% 0%; } }
 
 .source {
   padding-right: 20%; }
@@ -761,8 +784,15 @@ button {
 .url {
   padding-right: 20%; }
 
+sas
 .main-form {
-  line-height: 2; }
+  line-height: 42px; }
+  sas
+.main-form button {
+    margin-top: 1em; }
+  sas
+.main-form input {
+    border-style: solid; }
 
 /*--------------------------------------------------------------
 # home.php
@@ -773,9 +803,10 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  list-style: none; }
+  list-style: none;
+  font-size: 1.2rem; }
   .quote-author li {
-    padding-right: 14px; }
+    padding-right: 30px; }
 
 .quote-tags {
   display: -webkit-box;
@@ -783,29 +814,77 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  list-style: none; }
+  list-style: none;
+  font-size: 1.2rem; }
   .quote-tags li {
-    padding-right: 14px; }
+    padding-right: 30px; }
 
 .quote-categories > .categories {
   position: relative;
-  left: 22px;
   list-style: none;
-  font-size: 1.5em; }
+  font-size: 1.5rem; }
   .quote-categories > .categories ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     list-style: none;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    word-spacing: 2px;
+    font-size: 1.2rem; }
     .quote-categories > .categories ul li {
-      padding-right: 14px;
-      font-size: 1.3rem; }
+      padding-right: 30px; }
+
+.title-category {
+  border-bottom: 1px dashed #ffffff;
+  padding-bottom: 45px; }
+
+.category-title {
+  border-bottom: 1px dashed #ffffff;
+  padding-bottom: 20px; }
 
 .search-title {
   border-bottom: 1px dashed #ffffff;
   padding-bottom: 28px; }
+
+/*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+.title-404 {
+  font-size: 2.5em; }
+  @media (min-width: 600px) {
+    .title-404 {
+      font-size: 2em; } }
+
+.content-404 {
+  font-size: 1.25em; }
+  @media (min-width: 600px) {
+    .content-404 {
+      font-size: 1em; } }
+
+.search-form {
+  margin-bottom: 237px; }
+
+fieldset {
+  border: none;
+  margin: none;
+  padding: 0rem;
+  float: left;
+  border-style: none;
+  font-size: 1.2em; }
+
+.search-submit {
+  border: none;
+  padding: 0rem 0rem;
+  font-size: 1em; }
+  .search-submit i {
+    margin-left: 7px; }
+
+.search-field {
+  border-style: solid;
+  padding: 0.2em 6em 0.2em .4em;
+  font-size: 1.05em;
+  font-weight: lighter; }
 
 body {
   font-family: 'Exo-Light'; }

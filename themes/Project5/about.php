@@ -1,6 +1,7 @@
 <?php
 /**
 * Template Name: About
+
 *
 * @package WordPress
 * @subpackage Twenty_Fourteen
@@ -23,7 +24,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<section class="about-section">
 			<?php while ( have_posts() ) : the_post(); ?>
-		<h1>About</h1>
+		<h1 class="about-title">About</h1>
 		<p>Quotes on Dev is a project site for the RED Academy Web Developer Professional program. It's used to experiment with AJAX, WP API, jQuery, and other cool things. </p>
 		<p>This site is heavily inspired by Chris Coyler's <a href="www.Quotesondesign.com">Quotes  on Design.</a>
 

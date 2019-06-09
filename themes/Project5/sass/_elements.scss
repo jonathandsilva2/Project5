@@ -35,13 +35,15 @@ hr {
   margin-bottom: $base__space-unit;
 }
 
-ul,
-ol {
-  margin: 0 0 $base__space-unit ($base__space-unit * 2);
-}
+// ul,
+// ol {
+//   margin: 0 0 $base__space-unit ($base__space-unit * 2);
+// }
+
 
 ul {
   list-style: disc;
+  padding-inline-start: 0px;
 }
 
 ol {
@@ -51,7 +53,7 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: $base__space-unit;
+  
 }
 
 dt {

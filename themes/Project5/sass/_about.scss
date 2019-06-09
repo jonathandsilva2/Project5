@@ -2,11 +2,16 @@
 # home.php
 --------------------------------------------------------------*/
 
+.about-title {
+    font-weight: 700;
+}
 
-    
+.about-title {
+    font-size: 1.7em;
+}
     
 .about-section {
-
+   
     @include breakpoint(desktop) {
         text-align: left;
     }

@@ -23,12 +23,12 @@
 }
 
 .home-logo {
-    width: 550px;
+    width: 425px;
     @include breakpoint(tablet) {
-        width: 700px
+        width: 575px
     }
     @include breakpoint(desktop) {
-        width: 940px;
+        width: 675px;
     }
 }
 
@@ -52,22 +52,22 @@
 
 @include breakpoint(desktop){
     font-family: FontAwesome;
-    font-size: 153px;
+    font-size: 130px;
     content: "\f10d";
     position: absolute;
     color: $color__text-brand;
-    top: 250px;
-    left: 10px;
+    top: 174px;
+    left: 150px;
 }
 }
 .quote-holder::after  {
 @include breakpoint(desktop) {
     font-family: FontAwesome;
-    font-size: 153px;
+    font-size: 130px;
     content: "\f10e";
     position: absolute;
     color: $color__text-brand;
-  top: 250px;
-  right: 10px;
+    top: 174px;
+    right: 165px;
 }
 }

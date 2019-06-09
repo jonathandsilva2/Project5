@@ -6,10 +6,12 @@
 body {
     padding: 0 15px;
     min-width: 440px;
+    @include breakpoint(tablet){
+        padding: 0 30px;
+    }
     @include breakpoint(desktop) {
         display: flex;
         justify-content: center;
-        
     }
 }
 
@@ -18,20 +20,29 @@ body {
 .site-main {
 
     @include breakpoint(desktop) {
-        text-align: center;
-        padding: 0 80px;
+        padding: 0 200px;
     }
  
 }
 
 .quote-main {
-    font-size: 2em;
+    font-size: 1.5em;
+    height: 380px;
+
+    @include breakpoint(tablet) {
+        font-size: 1.2em;
+    }
+    @include breakpoint(desktop) {
+        font-size: 1.3em;
+    }
 }
 
-button {
+.quote-button-container {
     margin-top: 3em;
-
- 
+    @include breakpoint(desktop){
+    display: flex;
+    justify-content: center; 
+    }
 }
     
 

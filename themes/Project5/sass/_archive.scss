@@ -8,8 +8,9 @@
         display: flex;
         flex-wrap: wrap;
         list-style: none;
+        font-size: 1.2rem;
          li {
-             padding-right: 14px;
+             padding-right: 30px;
          }
       
     }
@@ -20,8 +21,9 @@
         display: flex;
         flex-wrap: wrap;
         list-style: none;
+        font-size: 1.2rem;
         li {
-            padding-right: 14px;
+            padding-right: 30px;
         }
     }
 
@@ -29,16 +31,28 @@
     
     .quote-categories>.categories {
     position: relative;
-    left: 22px;
     list-style: none;
-        font-size: 1.5em;
+    font-size: 1.5rem;
+
     ul {
         display: flex;
         list-style: none;
         flex-wrap: wrap;
+        word-spacing: 2px;
+        font-size: 1.2rem;
         li {
-            padding-right: 14px;
-            font-size: 1.3rem;
+            padding-right: 30px;
+            
         }
     }
+}
+
+.title-category {
+    border-bottom : $border__dashed;
+    padding-bottom: 45px;
+}
+
+.category-title {
+    border-bottom : $border__dashed;
+    padding-bottom: 20px;
 }

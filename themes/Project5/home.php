@@ -43,8 +43,12 @@ get_header(); ?>
                 // no posts found
                 '<h3>Your database is empty . GET SOME QUOTES IN THERE.</h3>';
 			}
-			?> </main>
-            <button type="button" class="quote-button">Show Me Another!</button><?php
+			?> 
+			  </main>
+			  <div class="quote-button-container">
+				<button type="button" class="quote-button">Show Me Another!</button>
+			</div>
+			<?php
 			/* Restore original Post Data */
 
 			

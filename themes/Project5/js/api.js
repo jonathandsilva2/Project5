@@ -13,18 +13,17 @@ $( document ).ready(function() {
        
        }).done( function(response) {
        let data = response;
-       console.log(data);
+ 
        let author = response[0].title.rendered;
        let content = response[0].content.rendered;
       
-console.log(data);
        $('.quote-main').html(''); 
        $('.quote-main').append(content);
        if (response[0]._qod_quote_source.length !== 0 & response[0]._qod_quote_source_url.length !== 0) {
          let source = response[0]._qod_quote_source
          let sourceURL = response[0]._qod_quote_source_url
 
-         $('.quote-main').append( '<p>&#8212 ' + author + ', <a href ="' + sourceURL + '">' + source + '</p>' );
+       $('.quote-main').append( '<p>&#8212 ' + author + ', <a href ="' + sourceURL + '">' + source + '</p>' );
        } else {
                 $('.quote-main').append( '<p>&#8212 ' + author + '</p>' );
        }
@@ -32,8 +31,8 @@ console.log(data);
 
     
        
-       
        });
+       
     });
  })
 ( jQuery)
@@ -54,7 +53,7 @@ console.log(data);
          
          $.ajax({
             method: 'post',
-            url: 'http://localhost:8888/Project5/wp-json/wp/v2/posts',
+            url: red_vars.rest_url + 'wp/v2/posts',
             
             data: ourPostData, 
  
@@ -65,12 +64,14 @@ console.log(data);
    $('.quote').val(" ");
    $('.source').val(" ");
    $('.url').val(" ");
-   alert("GJ");
+   alert("Your quote was succesfully submitted.");
   })
+  .fail( function (fail) {
+alert('Check yourself');
+})
 })
 
 
  ;
 
 
-// posts?filter[orderby]=rand&filter[posts_per_page]=1
