@@ -29,9 +29,9 @@
 				<nav id="site-navigation" class="main-navigation quote-holder" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					
-					<img class="home-logo" src="<?php echo get_template_directory_uri().'/images/' ?>qod-logo.svg" alt="Main Site Logo
-			
-			"/>
+					<a href="<?php echo get_option('siteurl');?>"><img class="home-logo" src="<?php echo get_template_directory_uri().'/images/' ?>qod-logo.svg" alt="Main Site Logo"/></a>
+
+
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 			<div id="content" class="site-content">

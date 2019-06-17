@@ -12,11 +12,12 @@ $( document ).ready(function() {
           
        
        }).done( function(response) {
-       let data = response;
- 
+       console.log(response)
+
        let author = response[0].title.rendered;
        let content = response[0].content.rendered;
-      
+       let link = response[0].slug;
+       console.log(link);
        $('.quote-main').html(''); 
        $('.quote-main').append(content);
        if (response[0]._qod_quote_source.length !== 0 & response[0]._qod_quote_source_url.length !== 0) {
@@ -28,8 +29,7 @@ $( document ).ready(function() {
                 $('.quote-main').append( '<p>&#8212 ' + author + '</p>' );
        }
        
-
-    
+       history.pushState(null, null, link);
        
        });
        
@@ -69,9 +69,10 @@ $( document ).ready(function() {
   .fail( function (fail) {
 alert('Check yourself');
 })
+
+
 })
 
 
  ;
-
 
